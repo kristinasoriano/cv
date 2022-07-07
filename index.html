@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kristina Soriano</title>
   <!--Favicon-->
   <link rel="icon" href="favicon.ico"/>
@@ -11,88 +13,71 @@
   <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
 
   <!--CSS Stylesheet-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" />
 
   <!--Font Awesome-->
-  <!--<script defer href="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>-->
-  <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!--Bootstrap Scripts-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <section class="colored-section" id="title">
+  <section class="white-section" id="title">
 
       <!-- Start Nav Bar -->
-      <nav class="navbar navbar-expand-sm navbar-dark">
-       <a class="navbar-brand" href="" ></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <img class="profile-pic" src="images/myavatar-img.png" alt="Kristina profile-image">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about-me">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">My Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cta">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+  <nav class="navbar" style="background-color: #118B0B;">
     <div class="container-fluid">
-      <!-- Start Welcome Section / Title -->
+        <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">
+                <i class="nav-fa fa-regular fa-address-card"></i>About Me</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">
+                  <i class="nav-fa fa-solid fa-gear"></i> My Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cta">
+                  <i class="nav-fa fa-solid fa-envelope"></i> Contact Me</a>
+              </li>
+        </ul>
+    </div>
+  </nav>
+    <div class="container-fluid">
+
+        <!-- End Nav Bar -->
+
+
+        <!-- Start Welcome Section -->
 
       <div class="row">
         <div class="col-lg-12">
           <h1 class="big-heading">I'm Kristina.</h1>
           <h2 class="role">Front-end Developer and Designer</h2>
-
-        <!--Buttons
-          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
-          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
-        -->
-
        </div>
-<!--
-        <div class="col-lg-6">
-          <img class="profile-pic" src="images/myavatar-img.png" alt="Kristina profile-image">
-        </div>
---->
-      </div>
-
-
-
-      </div>
-
-
-      <div class="row">
       <img class="profile-background" src="images/profile-background.png" alt="Kristina profile-background">
-      </div>
-
-
+    </div>
   </section>
 
 
   <!-- About Me -->
+<section class="colored-section" id="title">
 <h2 class="section-heading1" id="about-me">Hi there!</h1>
-<p class="introduction">I am glad that you came across my profile. After a lenghty hiatus, I am kick-starting my career in this field as I found myself loving back the digital world. I might sound entry level to my career but I do have a broad knowledge of HTML5, CSS3, JavaScript, PHP, JQuery, Python and Bootstrap.</p>
+<p class="introduction">I am glad that you came across my profile. <br>
+  After a lengthy hiatus, I am kick-starting my career with what I really love to do - to work within the WWW. <br>
+  I do have a broad knowledge and understanding of HTML5, CSS3, Bootstrap, JavaScript, PHP, jQuery, SQL and Python. <br>
+  With my capability of understanding added information at a rapid pace, I am taking advantage of it to learn more. <br>
+  My passion to learn new things keep myself abreast of recent technologies. </p>
 
-  <section class="white-section">
-    <div class="container-fluid">
+
+  <hr>
+  
       <div class="row">
-
         <div class="about-me-box col-lg-4">
           <!---to style each and can move them in a center-->
           <i class="icon fas fa-check-circle fa-4x"></i>
@@ -111,22 +96,21 @@
           <h3 class="about-me-title">Professionalism.</h3>
           <p>I put a lot of patience and dedication to what I do.</p>
         </div>
-
-      </div>
     </div>
   </section>
+  <!-- End of About-Me Section -->
 
 
-  <!-- Skills -->
+  <!-- Skills Section -->
 
-  <section class="colored-section" id="skills">
+  <section class="white-section" id="skills">
     <div class="skills container">
       <div class="row">
         <div class="col-lg-6">
           <h2 class="skills-set text-left">Skills</h2>
 
           <div class="row no-gutters">
-            <div class="col-sm-1 text-left">
+            <div class="col-sm-1">
               <i class="icon fab fa-html5 fa-2x"></i>
             </div>
             <div class="col-sm-5 text-left">
@@ -269,10 +253,10 @@
 
           <div class="row no-gutters">
             <div class="col-sm-1 text-left">
-              <i class="icon fab fa-adobe fa-2x"></i>
+              <i class="icon fa fa-chart-line fa-2x"></i>
             </div>
             <div class="col-sm-5 text-left">
-              <h5 class="skills-row mt-0 text-left">SEO Knowledge</h5>
+              <h5 class="skills-row mt-0 text-left">On-Page SEO</h5>
             </div>
             <div class="col-sm-1">
 
@@ -327,7 +311,7 @@
           
            <div class="row no-gutters">
             <div class="col-sm-1 text-left">
-              <i class="icon fas fa-chart-line fa-2x"></i>
+              <i class="icon fas fa-bar-chart fa-2x"></i>
             </div>
             <div class="col-sm-5 text-left">
               <h5 class="skills-row mt-0 text-left">Illustrator</h5>
@@ -346,7 +330,7 @@
 
            <div class="row no-gutters">
             <div class="col-sm-1 text-left">
-              <i class="fa-solid fa-images fa-2x"></i>
+              <i class="icon fas fa-images fa-2x"></i>
             </div>
             <div class="col-sm-5 text-left">
               <h5 class="skills-row mt-0 text-left">Photoshop</h5>
@@ -367,46 +351,38 @@
         </div>
       </div>
 
-    </div>
+    
 
     <div class="skills-statement">
       <h3><u>More About Me..</u></h3><br>
-      <h5> Aside from these above-mentioned skills, I am a fast-learner and a tech-savvy. <br>
-        I do believe that learning new skills is an investment for me that is why I never <br>
-        stop learning until I become an expert to the Programming Languages I chose to hone. <br>
-        I am always committed to what I do and applies the things that I've learned in every situation that I am put into.  </h5>
+      <p> Aside from these above-mentioned skills, I am a fast-learner and a tech-savvy. <br>
+        I am always committed to what I do and applies the things that I've learned in every situation that I am put into.  </p>
     </div>
-
-
-
-
-  <!-- Call to Action -->
-
-  <section class="white-section" id="cta">
-
-    <div class="container-fluid">
-      <h3 class="big-heading">Got someting exiciting project to build? Let's talk.</h3>
-        <button type="button" class="btn btn-lg" onclick="window.open('mailto:mkristina.csoriano@gmail.com');"><i class="fas fa-inbox "></i> Contact Me</button>
-    </div>
+  </div>
   </section>
 
 
-  <!-- Footer -->
+ <!-- CTA / Footer -->
+  <div id="cta" class="footer-section">
+   
+      <h5 class="big-heading-white">Got someting exiciting project to build? Let's talk.</h5>
+        <button type="button" class="btn" onclick="window.open('mailto:mkristina.csoriano@gmail.com');"><i class="fas fa-inbox fa-1x"></i> Contact Me</button>
+    <br>
+    <br>
 
-  <footer class="colored-section" id="footer">
-
-    <div class="container-fluid">
+    <div class="Links">
       <a href="https://twitter.com/tHeena22"><i class="footer-icon fab fa-twitter"></i></a>
       <a href="https://www.facebook.com/mkristina.cortez"><i class="footer-icon fab fa-facebook-f"></i></a>
       <a href="https://www.instagram.com/theena_csoriano/"><i class="footer-icon fab fa-instagram"></i></a>
       <a href="mailto:mkristina.csoriano@gmail.com"><i class="footer-icon fas fa-envelope"></i></a>
-      <p class="copyright">©KSoriano Copyright 2021</p>
+      <br>
+      <p class="copyright">©KSoriano Copyright 2022</p>
     </div>
-  </footer>
+  </div>
 
 
 
-
+<script src="script.js"></script>
 </body>
 
 </html>
