@@ -43,7 +43,7 @@ p {
 .introduction {
   width: 55%;
   margin: auto;
-  color: #40514e;
+  color: #3D550C;
   font-size: 1rem;
   line-height: 1.5;
 
@@ -59,8 +59,8 @@ p {
 /* Sections */
 
 .colored-section {
-  background: #81B622;
-  color: #59981A;
+  background: #59981A;
+  color: #81B622;
 }
 
 .white-section {
@@ -72,8 +72,8 @@ background-color: #fff;
 
 .navbar {
     padding: 0 0 0.5rem;
-    background: #11999e;
-    color: #59981A;
+    background: #59981A;
+    color: #ECF87F;
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -242,7 +242,7 @@ transform: translate(5%, 5%);
 }
 
 .project-title {
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 2rem 0.5rem;
 }
 
@@ -253,7 +253,7 @@ transform: translate(5%, 5%);
 }
 
 .btn-show-all {
-  font-size: 2rem;
+  font-size: 1rem;
   background: var(--main-gray);
   transition: background 0.3s ease-out;
 }
