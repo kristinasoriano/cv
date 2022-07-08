@@ -25,6 +25,9 @@
 </head>
 
 <body>
+ 
+  <span class="loader"><span class="loader-inner"></span></span>
+
 
   <section class="white-section" id="title">
 
@@ -58,7 +61,7 @@
       <div class="row">
         <div class="col-lg-12">
           <h1 class="big-heading">I'm Kristina.</h1>
-          <h2 class="role">Front-end Developer and Designer</h2>
+          <h2 class="role">For me, CODING is <span class="auto-input"></span></h2>
        </div>
       <img class="profile-background" src="images/profile-background.png" alt="Kristina profile-background">
     </div>
@@ -75,7 +78,7 @@
   My passion to learn new things keep myself abreast of recent technologies. </p>
 
 
-  <hr>
+  <hr class="divider">
   
       <div class="row">
         <div class="about-me-box col-lg-4">
@@ -354,7 +357,10 @@
     
 
     <div class="skills-statement">
-      <h3><u>More About Me..</u></h3><br>
+      <h3><u>More About Me</u></h3>
+      
+      
+      <br>
       <p> Aside from these above-mentioned skills, I am a fast-learner and a tech-savvy. <br>
         I am always committed to what I do and applies the things that I've learned in every situation that I am put into.  </p>
     </div>
@@ -365,10 +371,11 @@
  <!-- CTA / Footer -->
   <div id="cta" class="footer-section">
    
-      <h5 class="big-heading-white">Got someting exiciting project to build? Let's talk.</h5>
-        <button type="button" class="btn" onclick="window.open('mailto:mkristina.csoriano@gmail.com');"><i class="fas fa-inbox fa-1x"></i> Contact Me</button>
-    <br>
-    <br>
+      <h5 class="big-heading-white">Got something exiciting project to build? Let's talk.</h5>
+      <br>
+      <button type="button" class="btn" onclick="window.open('mailto:mkristina.csoriano@gmail.com');"><i class="fas fa-inbox fa-1x"></i> Contact Me</button>
+      <br>
+      <br>
 
     <div class="Links">
       <a href="https://twitter.com/tHeena22"><i class="footer-icon fab fa-twitter"></i></a>
@@ -382,7 +389,18 @@
 
 
 
-<script src="script.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto-input", {
+      strings: ["fun.", "tricky.", "a passion.", "LIFE."],
+      typeSpeed: 100,
+      backspeed: 100,
+      loop: true
+    })
+  </script>
+
+  
 </body>
 
 </html>
