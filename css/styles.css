@@ -1,5 +1,9 @@
 /* ELEMENT SELECTOR */
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   font-family: 'Quicksand', sans-serif;
@@ -31,8 +35,10 @@ p {
   font-size: 3.5rem;
   line-height: 1.5;
   color: #0F4F34;
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-bottom: 0;
 }
+
 
 
 .big-heading-white {
@@ -131,7 +137,6 @@ background-color: #fff;
 
 
 
-
 /* Title Section */
 
 
@@ -160,6 +165,7 @@ background-color: #fff;
   width: 50%;
   margin: auto;
   background-color: #fff;
+  margin-top: 50px;
 }
 
 /* About Me Section */
@@ -174,13 +180,23 @@ background-color: #fff;
   font-size: 1.5rem;
 }
 
+.divider {
+  width: 40%;
+  margin: auto;
+  border: 1px solid;
+  border-color: #0F4F34;
+  border-radius: 10px;
+  opacity: 0.80;
+  margin-bottom: 20px;
+}
+
 .icon {
-  color: #96DD99;
+  color: #0F4F34;
   margin-bottom: 1rem;
 }
 
 .icon:hover {
-  color: #8FBC8F;
+  color: #00A064;
 }
 
 .about-me-box  {
@@ -225,28 +241,24 @@ margin-left: 10px;
 /*CTA / Footer Section*/
 
 .btn {
-    height: 40px;
-    width: 150px;
-    font-size: 15px;
-    text-align: center;
-    justify-content: flex-end;
-    background: #96DD99;
-    border:0px;
-    color: #0F4F34;
-    bottom: 0;
-    margin: 4px 2px;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0 0 1px #96DD99;
-    -webkit-transition-duration: 0.5s;
-    -webkit-transition-timing-function: ease-out;
-    -webkit-box-shadow: 0px 0px 0 0 #0F4F34 inset , 0px 0px 0 #0F4F34 inset;
+  display: inline-block;
+  padding: 10px 25px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 .btn:hover {
-    -webkit-box-shadow: 0px 50px 0 0px #e4e1e2 inset , 0px -50px 0 0px #e4e1e2 inset;
+  background-color: #96DD99;
 }
-
 
 
 .footer {
