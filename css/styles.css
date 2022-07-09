@@ -210,7 +210,7 @@ background-color: #fff;
 .skills {
 display: inline-block;
 margin: 0%;
-padding: 35px 50px;sss
+padding: 35px 50px;
 }
 
 .no-gutters {
@@ -350,5 +350,61 @@ input, textarea {
   .cta-icon {
     margin-bottom: 40px;
   }
+}
+
+
+/* PROJECT PAGE ELEMENT SELECTOR */
+
+#project-column {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.code {
+color: #fff;
+transition: color 0.3s ease-out;
+}
+
+.project-title:hover .code {
+  color: #136341;
+}
+
+.project-image {
+height: calc(100% - 4rem);
+width: 80%;
+object-fit: cover;
+margin: auto;
+}
+
+.project-title {
+font-size: 20px;
+padding: 1rem 0.5rem;
+background: #00A064;
+box-shadow: 1px 1px 2px #00A064;
+border-radius: 2px;
+width: 80%;
+margin: auto;
+color: #fff;
+}
+
+
+/* PROFILE PAGE ELEMENT SELECTOR */
+
+
+.image {
+width: 40%;
+margin: 0 auto;
+margin-top: 120px;
+margin-left: 60px;
+padding-bottom: 20px;
+}
+
+
+.profile-text {
+padding: 80px 40px 50px 10px;
+margin: 0 auto;
+color: #fff;
+line-height: 1.5rem;
+text-align: justify;
 }
 
