@@ -1,4 +1,4 @@
-/* ELEMENT SELECTOR */
+/* HOME PAGE ELEMENT SELECTOR */
 
 html {
   scroll-behavior: smooth;
@@ -72,8 +72,6 @@ p {
 }
 
 
-
-
 /* Sections */
 
 .colored-section {
@@ -102,7 +100,6 @@ background-color: #fff;
   width: 100%;
   background-color: #0F4F34;
   z-index: 10;
-  
 }
 
 .nav-link {
@@ -136,15 +133,20 @@ background-color: #fff;
 }
 
 
-
 /* Title Section */
-
-
 .container-fluid {
   padding: 0 7px;
   text-align: left;
-  background-color: #fff;
 }
+
+.navbar {
+  background-color: #0F4F34;
+}
+/* Toggle button */
+.navbar-toggler {
+  background-color: #ffffff;
+}
+
 
 /* Download Buttons */
 
@@ -208,8 +210,7 @@ background-color: #fff;
 .skills {
 display: inline-block;
 margin: 0%;
-padding: 35px 50px;
-margin-left: 10px;
+padding: 35px 50px;sss
 }
 
 .no-gutters {
@@ -222,7 +223,7 @@ margin-left: 10px;
 }
 
 .skills-row {
-  text-align: left;
+  text-align: center;
 }
 
 .checked, .half {
@@ -269,7 +270,7 @@ margin-left: 10px;
 
 .footer-icon {
   margin: 20px 10px;
-  color:#31FF96
+  color:#31FF96;
 }
 
 .footer-icon:hover {
@@ -280,3 +281,74 @@ margin-left: 10px;
   font-size: 12px;
   color: #ffffff;
 }
+
+
+/* CONTACT PAGE ELEMENT SELECTOR */
+
+#cta-heading {
+  margin-bottom: 70px;
+}
+
+.cta-icon {
+  margin-top: 60px;
+  width: 55%;
+}
+
+#cta-form {
+  background-color: #00A064;
+  width: 80%;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+#message {
+  min-height: 120px;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+input, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 100%;
+}
+
+.btn-send {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #0F4F34;
+  border: 1px solid #0c3f2a;
+  backdrop-filter: blur(30px);
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.btn-send:hover {
+  background-color: #136341;
+}
+
+
+@media screen and (max-width: 768px) {
+  .cta-icon {
+    margin-bottom: 40px;
+  }
+}
+
