@@ -170,6 +170,15 @@ background-color: #fff;
   margin-top: 50px;
 }
 
+
+@media screen and (max-width: 425px) {
+ .profile-background {
+  width: 80%;
+ }
+}
+
+
+
 /* About Me Section */
 
 #about-me {
@@ -296,7 +305,7 @@ padding: 35px 50px;
 
 #cta-form {
   background-color: #00A064;
-  width: 80%;
+  width: 90%;
   padding: 30px;
   border-radius: 10px;
   margin: 0 auto;
@@ -409,3 +418,24 @@ line-height: 1.5rem;
 text-align: justify;
 }
 
+/* SKILLS PAGE ELEMENT SELECTOR */
+
+.list-skills {
+  margin: auto;
+  text-align: justify;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.skills-description {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.divider-spacing {
+  margin-top: 70px;
+}
+
+em {
+  font-weight: bold;
+}
