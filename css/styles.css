@@ -299,8 +299,10 @@ padding: 35px 50px;
 }
 
 .cta-icon {
-  margin-top: 60px;
-  width: 55%;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 80px;
 }
 
 #cta-form {
@@ -355,11 +357,6 @@ input, textarea {
 }
 
 
-@media screen and (max-width: 768px) {
-  .cta-icon {
-    margin-bottom: 40px;
-  }
-}
 
 
 /* PROJECT PAGE ELEMENT SELECTOR */
@@ -418,6 +415,18 @@ line-height: 1.5rem;
 text-align: justify;
 }
 
+.profile-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 80px;
+  }
+
+.div-spacing {
+  margin-bottom: 80px;
+}
+
+
 /* SKILLS PAGE ELEMENT SELECTOR */
 
 .list-skills {
@@ -439,3 +448,5 @@ text-align: justify;
 em {
   font-weight: bold;
 }
+
+
