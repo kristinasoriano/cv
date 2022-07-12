@@ -63,7 +63,7 @@
                 form.reset();
                 form.classList.remove("was-validated");
                 setTimeout(() => {
-                  result.style.display = "none";
+                  result.style.display = window.location.href = "thank-you.html"; /* redirect to a new page function */
                 }, 5000);
               });
           }
@@ -75,8 +75,3 @@
   })();
 
 /*End of Form*/
-
-
-function myFunction() {
-  window.location.href = "thank-you.html"; /* redirect to a new page function */
-}
