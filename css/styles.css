@@ -25,6 +25,9 @@ p {
   color: #40514e;
 }
 
+a {
+  text-decoration: none;
+}
 
 
 /* Headings */
@@ -164,18 +167,16 @@ background-color: #fff;
 }
 
 .profile-background {
-  width: 50%;
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  margin-top: 70px;
   margin: auto;
-  background-color: #fff;
-  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 
-@media screen and (max-width: 425px) {
- .profile-background {
-  width: 80%;
- }
-}
 
 
 
@@ -335,6 +336,32 @@ input, textarea {
   width: 100%;
 }
 
+/* Form Validation */
+.invalid-feedback {
+  display: none;
+  color: #FFEA00;
+}
+
+.empty-feedback {
+  display: none;
+  color: #FFEA00
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #CD001A;
+}
+/* End Form Validation */
+
+
 .btn-send {
   display: inline-block;
   padding: 10px 25px;
@@ -367,20 +394,21 @@ input, textarea {
 }
 
 .code {
-color: #fff;
-transition: color 0.3s ease-out;
+color: #FFEA00;
+transition: color 0.2s ease-out;
 }
 
 .project-title:hover .code {
-  color: #136341;
+  color: #ccbb00;
 }
 
+
 .project-image {
-height: calc(100% - 4rem);
-width: 80%;
-object-fit: cover;
-margin: auto;
+  height: auto;
+  max-width: 600px;
+  width: 100%;
 }
+
 
 .project-title {
 font-size: 20px;
@@ -388,10 +416,13 @@ padding: 1rem 0.5rem;
 background: #00A064;
 box-shadow: 1px 1px 2px #00A064;
 border-radius: 2px;
-width: 80%;
-margin: auto;
+width: 100%;
+max-width: 600px;
 color: #fff;
+margin: auto;
 }
+
+
 
 
 /* PROFILE PAGE ELEMENT SELECTOR */
@@ -416,11 +447,12 @@ text-align: justify;
 }
 
 .profile-image {
-  width: 100%;
+  width: 70%;
   max-width: 400px;
   height: auto;
   margin-top: 80px;
   }
+
 
 .div-spacing {
   margin-bottom: 80px;
@@ -434,6 +466,7 @@ text-align: justify;
   text-align: justify;
   padding-top: 60px;
   padding-bottom: 30px;
+  padding-left: 70px;
 }
 
 .skills-description {
@@ -450,3 +483,14 @@ em {
 }
 
 
+/* THANK YOU PAGE ELEMENT SELECTOR */
+
+.ty-envelope {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 70px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
