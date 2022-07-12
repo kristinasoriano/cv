@@ -62,75 +62,79 @@
            <!-- End Nav Bar -->
            
            
-              <!-- Start Form Section -->
-               <div class="container-fluid">
-           
-                 <div class="row">
-                   <div id="cta-heading" class="col-lg-12">
+          <!-- Start Form Section -->
+            <div class="container-fluid">
+                <div class="row">
+                  <div id="cta-heading" class="col-lg-12">
                      <h1 class="big-heading">Get in touch</h1>
                      <h3>Got something exiciting project to build? Let's talk.</h3>
                   </div>
 
-                <div class="col-lg-6 text-center">
+                  <div class="col-lg-6 text-center">
                     <img class="cta-icon" src="images/email-icon.png">
-                </div>
+                  </div>
 
 
-                <div class="col-lg-6 text-center">
-                    <form class="contact-form" action="contactform.php" id="cta-form" method="post">
-                        <div>
-                        <label id="name-label">Full Name </label>
-                        <input type="text" name="name" id="name" placeholder="Enter your fullname here" required>
-                        </div>
-                    
-                        <div>
-                        <label id="email-label">Email </label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email here" required>
-                        </div>
+                  <div class="col-lg-6 text-center">
+
+                    <form id="cta-form" action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+                      <input type="hidden" name="access_key" value="707a7315-af43-47a8-9053-69bc77b4f3e6"/>
+                      <input type="checkbox" name="botcheck" id="" style="display: none;"/> <!--Honeypot Spam Prevention Method-->
             
-                        <div>
-                            <label id="subject-label">Subject </label>
-                            <input type="email" name="subject" id="subject" placeholder="Subject" required>
-                        </div>
-            
-                        <div>
-                            <label id="subject-label">Please write your message here. </label>
-                            <textarea name="message" id="message" placeholder="Enter your message here.." required>
-                            </textarea>
-                        </div>
-            
-                        <div>
-                            <button type="button" class="btn-send" onclick="window.open('mailto:mkristina.csoriano@gmail.com');"><i class="fa fa-paper-plane fa-1x"></i> Submit</button>
-                        </div>
+                          <label for="name">Name</label>
+                          <input type="text" name="name" id="name" placeholder="Enter your name here" required class="form-control"/>
+                          <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                            Please provide your name.
+                          </div>
+                      
+                          <label for="email">Email Address</label>
+                          <input type="email" name="email" id="email" placeholder="Enter your email here" required class="form-control"/>
+                          <div class="invalid-feedback text-red-400 text-sm mt-1">
+                            Please provide a valid email address.
+                          </div>
+
+                          <label for="email">Subject</label>
+                          <input type="text" name="subject" placeholder="Subject" class="form-control">
+
+                          <label for="message">Message</label>
+                          <textarea rows="5" name="message" id="message" placeholder="Your Message" required class="form-control" ></textarea>
+                          <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                            Please enter your message.
+                          </div>
+
+                          
+                          <button type="submit" class="btn-send" name="redirect" onclick="myFunction()"><i class="fa fa-paper-plane fa-1x"></i> <!--Function to redirect to another page-->
+                            Send Message
+                          </button>
+
+                      <p class="text-base text-center text-gray-400" id="result"></p>
                     </form>
-                </div>
 
-                
-                </div>
 
-            </div>
+                  </div>  <!-- div col-lg-6-->
+              </div>      <!--row-->
+            </div>        <!--container fluid-->
         </section>
 
 
 
         <!-- CTA / Footer -->
     <div id="cta" class="footer-section">
-   
         <h5 class="big-heading-white">Let's Connect</h5>
         <br>
         
         <div class="Links">
-              <a href="https://github.com/kristinasoriano/myprofile"><i class="footer-icon fa-brands fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/ma-kristina-soriano-634880ba/"><i class="footer-icon fa-brands fa-linkedin"></i></a>
-              <a href="https://www.facebook.com/mkristina.cortez"><i class="footer-icon fab fa-facebook-f"></i></a>
-              <a href="https://www.instagram.com/theena_csoriano/"><i class="footer-icon fab fa-instagram"></i></a>
-              <a href="https://twitter.com/tHeena22"><i class="footer-icon fab fa-twitter"></i></a>
-              <a href="mailto:mkristina.csoriano@gmail.com"><i class="footer-icon fas fa-envelope"></i></a>
-              <br>
-              <p class="copyright">©KSoriano Copyright 2022</p>
+            <a href="https://github.com/kristinasoriano/myprofile"><i class="footer-icon fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ma-kristina-soriano-634880ba/"><i class="footer-icon fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/mkristina.cortez"><i class="footer-icon fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theena_csoriano/"><i class="footer-icon fab fa-instagram"></i></a>
+            <a href="https://twitter.com/tHeena22"><i class="footer-icon fab fa-twitter"></i></a>
+            <a href="mailto:mkristina.csoriano@gmail.com"><i class="footer-icon fas fa-envelope"></i></a>
+            <br>
+            <p class="copyright">©KSoriano Copyright 2022</p>
         </div>
     </div>
 
-    </body>
-
-  </html>
+  <script src="js/contact-form.js"></script>
+  </body>
+</html>
