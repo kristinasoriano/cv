@@ -4,7 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
@@ -29,8 +28,10 @@ a {
   text-decoration: none;
 }
 
+/* END - HOME PAGE ELEMENTS */
 
-/* Headings */
+
+/* HEADINGS*/
 
 .big-heading {
   font-family: 'Jura', sans-serif;
@@ -41,8 +42,6 @@ a {
   margin-top: 80px;
   margin-bottom: 0;
 }
-
-
 
 .big-heading-white {
   font-family: 'Jura', sans-serif;
@@ -74,8 +73,10 @@ a {
 
 }
 
+/* END - HEADINGS*/
 
-/* Sections */
+
+/* PAGE SECTIONS */
 
 .colored-section {
   background-color: #D7F5D3;
@@ -91,8 +92,10 @@ background-color: #fff;
   padding: 10px;
 }
 
+/* END - PAGE SECTIONS */
 
-/* Navigation Bar */
+
+/* NAVIGATION BAR SECTIONS */
 
 .nav {
   display: flex;
@@ -113,7 +116,6 @@ background-color: #fff;
   padding: 12px;
 }
 
-
 .nav-link:hover {
   display: flex;
   margin-right: 2rem;
@@ -122,6 +124,15 @@ background-color: #fff;
 
 .nav-fa {
   margin-right: 5px;
+}
+
+.navbar {
+  background-color: #0F4F34;
+}
+
+/* This is for the toggle button */
+.navbar-toggler {
+  background-color: #ffffff;
 }
 
 
@@ -135,35 +146,22 @@ background-color: #fff;
   }
 }
 
+/* END - NAVIGATION BAR SECTIONS */
 
-/* Title Section */
+
+/* TITLE SECTION */
+
 .container-fluid {
   padding: 0 7px;
   text-align: left;
 }
 
-.navbar {
-  background-color: #0F4F34;
-}
-/* Toggle button */
-.navbar-toggler {
-  background-color: #ffffff;
-}
-
-
-/* Download Buttons */
-
-.download-button {
-  margin: 5% 3% 5% 0;
-}
-
-/* Title Image */
-
-.profile-pic {
-  width: 3%;
-  position: inline-block;
-  right: 100%;
-  transform: translate(0%, 10%);
+.logo {
+    width: 100%;
+    max-width: 100px;
+    margin-top: 90px;
+    margin-left: 150px;
+    position: absolute;
 }
 
 .profile-background {
@@ -177,10 +175,26 @@ background-color: #fff;
 }
 
 
+ @media screen and (max-width: 880px) {
+.logo {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-heading-white {
+  margin-top: 0;
+}
+
+}
+  
+/* END - TITLE SECTION */
 
 
 
-/* About Me Section */
+/* ABOUT ME SECTION */
 
 #about-me {
   position:relative;
@@ -215,7 +229,11 @@ background-color: #fff;
   padding: 2.5%;
 }
 
-/* Skills Section */
+/* END - ABOUT ME SECTION */
+
+
+
+/* SKILLS SECTION */
 
 .skills {
 display: inline-block;
@@ -249,7 +267,11 @@ padding: 35px 50px;
   margin-top: 0;
 }
 
-/*CTA / Footer Section*/
+/* END - SKILLS SECTION */
+
+
+
+/* CTA/FOOTER SECTION */
 
 .btn {
   display: inline-block;
@@ -271,7 +293,6 @@ padding: 35px 50px;
   background-color: #96DD99;
 }
 
-
 .footer {
   height: 200px;
   padding: 20px;
@@ -291,6 +312,9 @@ padding: 35px 50px;
   font-size: 12px;
   color: #ffffff;
 }
+
+/* CTA/FOOTER SECTION */
+
 
 
 /* CONTACT PAGE ELEMENT SELECTOR */
@@ -336,7 +360,31 @@ input, textarea {
   width: 100%;
 }
 
-/* Form Validation */
+.btn-send {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #0F4F34;
+  border: 1px solid #0c3f2a;
+  backdrop-filter: blur(30px);
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.btn-send:hover {
+  background-color: #136341;
+}
+
+/* END - CONTACT PAGE ELEMENT */
+
+
+/* FORM VALIDATION */
 .invalid-feedback {
   display: none;
   color: #FFEA00;
@@ -359,31 +407,9 @@ input, textarea {
 .was-validated :invalid {
   border-color: #CD001A;
 }
-/* End Form Validation */
 
 
-.btn-send {
-  display: inline-block;
-  padding: 10px 25px;
-  border: 0;
-  text-decoration: none;
-  border-radius: 15px;
-  background-color: #0F4F34;
-  border: 1px solid #0c3f2a;
-  backdrop-filter: blur(30px);
-  color: rgba(255,255,255,0.8);
-  font-size: 14px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  text-transform: uppercase;
-  margin-top: 20px;
-}
-
-.btn-send:hover {
-  background-color: #136341;
-}
-
-
+/* END - FORM VALIDATION */
 
 
 /* PROJECT PAGE ELEMENT SELECTOR */
@@ -402,13 +428,11 @@ transition: color 0.2s ease-out;
   color: #ccbb00;
 }
 
-
 .project-image {
   height: auto;
   max-width: 600px;
   width: 100%;
 }
-
 
 .project-title {
 font-size: 20px;
@@ -422,11 +446,10 @@ color: #fff;
 margin: auto;
 }
 
-
+/* END - PROJECT PAGE ELEMENT */
 
 
 /* PROFILE PAGE ELEMENT SELECTOR */
-
 
 .image {
 width: 50%;
@@ -436,7 +459,6 @@ margin-left: 60px;
 padding-bottom: 10px;
 padding-right: 70px;
 }
-
 
 .profile-text {
 padding: 80px 40px 50px 10px;
@@ -457,6 +479,8 @@ text-align: justify;
 .div-spacing {
   margin-bottom: 80px;
 }
+
+/* END - PROFILE PAGE ELEMENT */
 
 
 /* SKILLS PAGE ELEMENT SELECTOR */
@@ -482,6 +506,8 @@ em {
   font-weight: bold;
 }
 
+/* END - SKILLS PAGE ELEMENT */
+
 
 /* THANK YOU PAGE ELEMENT SELECTOR */
 
@@ -494,3 +520,4 @@ em {
   padding-top: 50px;
   padding-bottom: 70px;
 }
+/* END - THANK YOU PAGE ELEMENT */
