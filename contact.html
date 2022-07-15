@@ -30,7 +30,7 @@
             <!-- Start Nav Bar -->
            
              <nav class="navbar navbar-expand-lg">
-               <div class="container-fluid">
+               <div class="container-fluid-nav">
                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                    <span class="navbar-toggler-icon"></span>
                  </button>
@@ -103,9 +103,9 @@
                           </div>
 
                           
-                          <button type="submit" class="btn-send" name="redirect" onclick="validate_activity();"><i class="fa fa-paper-plane fa-1x"></i> <!--Function to redirect to another page-->
+                          <button id="submit" type="submit" class="btn-send" name="redirect" onclick="validate_activity();"><i class="fa fa-paper-plane fa-1x"></i> <!--Function to redirect to another page-->
                             Send Message
-                          </button>
+                          </button> <!--Onclick Validation is not part of web3forms-->
 
                       <p class="text-base text-center text-gray-400" id="result"></p>
                     </form>
