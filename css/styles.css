@@ -108,6 +108,11 @@ background-color: #fff;
   z-index: 10;
 }
 
+.container-fluid-nav {
+margin-left: 15px;
+}
+
+
 .nav-link {
   display: flex;
   align-items: center;
@@ -154,7 +159,16 @@ background-color: #fff;
 .container-fluid {
   padding: 0 7px;
   text-align: left;
+  position: relative;
+  animation: mymove 1s;
 }
+
+@keyframes mymove {
+  from {top: 50px;}
+  to {top: 0px;}
+}
+
+
 
 .logo {
     width: 100%;
@@ -175,6 +189,7 @@ background-color: #fff;
 }
 
 
+
  @media screen and (max-width: 880px) {
 .logo {
   position: relative;
@@ -183,7 +198,9 @@ background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 150px;
 }
+
 .big-heading-white {
   margin-top: 0;
 }
@@ -316,102 +333,6 @@ padding: 35px 50px;
 /* CTA/FOOTER SECTION */
 
 
-
-/* CONTACT PAGE ELEMENT SELECTOR */
-
-#cta-heading {
-  margin-bottom: 70px;
-}
-
-.cta-icon {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin-top: 80px;
-}
-
-#cta-form {
-  background-color: #00A064;
-  width: 90%;
-  padding: 30px;
-  border-radius: 10px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-}
-
-label {
-  display: flex;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: #fff;
-}
-
-#message {
-  min-height: 120px;
-  padding: 0.625rem;
-  resize: vertical;
-}
-
-input, textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  width: 100%;
-}
-
-.btn-send {
-  display: inline-block;
-  padding: 10px 25px;
-  border: 0;
-  text-decoration: none;
-  border-radius: 15px;
-  background-color: #0F4F34;
-  border: 1px solid #0c3f2a;
-  backdrop-filter: blur(30px);
-  color: rgba(255,255,255,0.8);
-  font-size: 14px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  text-transform: uppercase;
-  margin-top: 20px;
-}
-
-.btn-send:hover {
-  background-color: #136341;
-}
-
-/* END - CONTACT PAGE ELEMENT */
-
-
-/* FORM VALIDATION */
-.invalid-feedback {
-  display: none;
-  color: #FFEA00;
-}
-
-.empty-feedback {
-  display: none;
-  color: #FFEA00
-}
-
-.was-validated :placeholder-shown:invalid ~ .empty-feedback {
-  display: block;
-}
-
-.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
-  display: block;
-}
-
-.is-invalid,
-.was-validated :invalid {
-  border-color: #CD001A;
-}
-
-
-/* END - FORM VALIDATION */
-
-
 /* PROJECT PAGE ELEMENT SELECTOR */
 
 #project-column {
@@ -507,6 +428,101 @@ em {
 }
 
 /* END - SKILLS PAGE ELEMENT */
+
+
+
+/* CONTACT PAGE ELEMENT SELECTOR */
+
+#cta-heading {
+  margin-bottom: 70px;
+}
+
+.cta-icon {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 80px;
+}
+
+#cta-form {
+  background-color: #00A064;
+  width: 90%;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+#message {
+  min-height: 120px;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+input, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 100%;
+}
+
+.btn-send {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #0F4F34;
+  border: 1px solid #0c3f2a;
+  backdrop-filter: blur(30px);
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.btn-send:hover {
+  background-color: #136341;
+}
+
+/* END - CONTACT PAGE ELEMENT */
+
+
+/* FORM VALIDATION */
+.invalid-feedback {
+  display: none;
+  color: #FFEA00;
+}
+
+.empty-feedback {
+  display: none;
+  color: #FFEA00
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #CD001A;
+}
+
+/* END - FORM VALIDATION */
 
 
 /* THANK YOU PAGE ELEMENT SELECTOR */
