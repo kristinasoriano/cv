@@ -28,6 +28,13 @@ a {
   text-decoration: none;
 }
 
+.green-dark {
+  background-color: #0F4F34;
+}
+
+.white {
+  color: #fff;
+}
 /* END - HOME PAGE ELEMENTS */
 
 
@@ -366,6 +373,34 @@ max-width: 600px;
 color: #fff;
 margin: auto;
 }
+
+.container-image {
+  position: relative;
+}
+
+.proj-button-left {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  border: 1px solid #00a064;
+  padding: 5px 10px;
+  border-radius: 4px 0 0 4px;
+}
+
+.proj-button-right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  border: 1px solid #00a064;
+  padding: 5px 10px;
+  border-radius: 0px 4px 4px 0;
+}
+
+.proj-button-left:hover, .proj-button-right:hover {
+  background: #00ba74;
+  border: 1px solid #00a064;
+}
+
 
 /* END - PROJECT PAGE ELEMENT */
 
